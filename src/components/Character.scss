@@ -1,0 +1,23 @@
+.Character {
+    @apply bg-slate-300 rounded-xl overflow-hidden dark:bg-darkcolorcard;
+
+    .image {
+        @apply w-full object-cover;
+    }
+
+    .info {
+        @apply capitalize flex flex-col justify-center my-6 mx-0 text-indigo-900 text-center dark:text-indigo-100;
+
+        h4 {
+            @apply text-xl mb-4 font-bold md:text-2xl;
+
+            span {
+                @apply text-lg font-normal md:text-xl;
+            }
+        }
+    }
+
+    .info h4:last-child {
+        @apply mb-0;
+    }
+}
